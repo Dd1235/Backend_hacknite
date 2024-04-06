@@ -134,8 +134,23 @@ const getAllDonations = async (req, res) => {
     const donations = await Donation.find({}).sort({ createdAt: -1 });
     res.status(200).json(donations);
   } catch (error) {
-    console.error("Error fetching all donations:", error);
+    console.log("Error fetching all donations:", error);
     res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+const getDonationById = async (id) => {
+  try {
+    const donation = await Donation.findById(id);
+    if (!donation) {
+      console.log("Donation not found!");
+      return null;
+    }
+    console.log("Donation found:", donation);
+    return donation;
+  } catch (error) {
+    console.error("Error fetching donation by ID:", error);
+    return null;
   }
 };
 
@@ -145,6 +160,7 @@ module.exports = {
   numberofUniqueDonors,
   getRecentDonations,
   getAllDonations,
+  getDonationById,
 };
 
 // to instead use breva, don't delete this comment!
