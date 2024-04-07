@@ -1,6 +1,7 @@
 # Backend Repository
 
 This repository contains the server-side code and logic for our prototype NGO site made for an intra college hackathon(Hacknite) for freshmen students of IIIT Bangalore. It is hosted on render. The site itself is hosted on vercel [here](https://frontend-hacknite.vercel.app/).
+The frontend repository could be found [here](https://github.com/Dd1235/Frontend_hacknite?tab=readme-ov-file)
 
 ## Environment Variables
 
