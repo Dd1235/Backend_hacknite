@@ -20,6 +20,20 @@ To get started with the backend, follow these steps:
 
 1. Clone the repository to your local machine
 
-2. Install the necessary dependencies by running `npm install`.
+2. Install the necessary dependencies by running:
 
-3. Start the server by running `npm start`.
+   ```bash
+   npm install
+   ```
+
+3. Start the server by running:
+
+   ```bash
+   npm start
+   ```
+
+   This will deploy the development server on `localhost:4000`.
+
+## License
+
+This project is licensed under the [MIT License](https://frontend-hacknite.vercel.app/oops).
